@@ -1,4 +1,4 @@
-# Awnsers
+# Answers
 ```
 Time Spent
 SpecFlow: 3 Hours 
@@ -8,7 +8,10 @@ Writeup: 1 Hour
 Total: 5 Hours
 ```
 ## Question 1
-Before I talk about the solution side I would like to explain why their are two projects in the folder. Understanding your requirment for the demonstration of c# and Specflow skills I wanted to provide that to you. However it has been a long time since I have used specflow (lets just say it was somewhere early in version 1) and just about as long since I have written any c#. Given that I wanted to also provide something a little more familiare to myself in watir, where I can demonstrate concepts and good use of the tools like cucumber. Another choice on using both of these was to incorporate the BDD scenarios as proper cucumber features. 
+I have completed a simple solution using c# and SpecFlow. I am a little out of practice having not worked with either since 2011 and felt it did not demonstrate my abilities sufficiently. This is why I have also included a second test suite using ruby and watir.  I am more familiar with this tool set and thought it would demonstrate my knowledge of concepts such as the page object model, and the use of cucumber. I will now go through common improvements I would make given the time (or if it was being deployed to a production environment).
+
+
+Before I talk about the solution side I would like to explain why there are two projects in the folder. Understanding your requirment for the demonstration of c# and Specflow skills I wanted to provide that to you. However it has been a long time since I have used specflow (lets just say it was somewhere early in version 1) and just about as long since I have written any c#. Given that I wanted to also provide something a little more familiare to myself in watir, where I can demonstrate concepts and good use of the tools like cucumber. Another choice on using both of these was to incorporate the BDD scenarios as proper cucumber features. 
 That being said I will go through common improvements I would make given the time (or if it was being deployed to a production environment). 
 
 __Common Improvements__
@@ -22,26 +25,26 @@ Neither test suite reports failures nicley or creates any test reports, screensh
 * **Ability to run tests in parralel.**
 Neither test has this capacity
 * **Fragile tests due to data dependency.**
-The tests have no ability to set the data up first and as such there is no garuntee it will always be in the system under tests resulting in false failures. 
+The tests have no ability to set the data up first and as such there is no guarantee it will always be in the system under tests resulting in false failures. 
 
 ### SpecFlow
 
-Although I spent longer on this project, there are a lot more things I could have done better with more time (mostly reading up and refamiliarizing myself). Some of these include:
+There are some things I would have done better with more time. Some of these include:
 * **Use of sleeps.**
-Use of sleeps is an anti-patten for test automation, but I could not find a way for it to wait for button/link in the time.
+Use of sleeps is an anti-patten for test automation.
 * **No page object model used.**
-I did not have time to look up how this is usually implemented in c#. 
+Although I did try to cut code reuse down within the step file, with helper methods. 
 * **Lookups not using data-test-id.**
-I could not find how to build custom lookups using these, and wanted to avoid using xpath to locate on these specifically. 
+I would like to have added custom lookups on these. 
 
 #### How to run
-To run this project, please unzip and open in visual studio, and then run the tests. All the dependencies should be provided. 
+To run this project, please unzip and navigate to the SpecFlow folder. With visual studio 2017 open the solution found in the SpecFlow folder called `menulogSearch.sln`. The tests can then be from the Visual studio options menu. All the dependencies should be provided in the packages folder. 
 
 
 
 ### Watir 
 
-I choose to do this in addition to the SpecFlow to show my knowledge and use of concepts such as Page Object model, where I am more familiare. The following is a diagram of the model I have used:
+I choose to do this to show my knowledge and use of concepts such as Page Object model. The following is a diagram of the model I have used:
 ```
  ---->>> Cucucmber feature file: holds the scenarios and steps, these call the step definitions
    |
@@ -61,14 +64,14 @@ Once installed navigate to the root of the test folder, and run `bundler install
 To run the tests, navigate to the 'test' folder and run the command `rake search`. Alternatively you can run the tests with the command `cucumber`.
  
 ## Question 2 
-I dont know if it counts as a trend, but the introduction of new automation solutions on to the market that dont use selenium is interesting. Although they have there limitations or costs, it will be interesting to see how they develop moving forward. The w3c recomendation paper for Selenium is some interesting news from this June and will hopefully add some needed standadisation after all the time it has been around.  
+The introduction of new automation solutions on to the market that don't use selenium is interesting. Although they have their limitations or costs, it will be interesting to see how they develop moving forward. The w3c recomendation paper for Selenium is some interesting news from this June and will hopefully add some needed standardisation after all the time it has been around.  
 
 ## Question 3 
-If the system under test had no test automation coverage, The first steps would be to establish some tests around the business critical flows. These include registration, search, ordering, etc, the flows where most of the systems traffic is and the business money is made. Secondly I would look for any particular areas of the code that are not well maintained and/or are messy and hard to work on. Discussing with the developers is usually a pretty good way to sniff the smelly code out as they will usualy know them intemitely. Another way of identifying these area can be to look for areas of the system that have a higher bug rate. It can be important to get test coverage around these areas as well. 
-All of the above is a pragamatic approach to the question at hand, but a lot would depend on the amount of time that could be spent on the system, and how much trust there is in the functionlaity that is already there. If there is a low confidence then it would require extra time to validate scenarios are correct and that tests are not being built around incorrect behaviour, which may not look like a bug is still incorrect from the businesses perspective.
+If the system under test had no test automation coverage; the first steps would be to establish some tests around the business critical flows. These include registration, search, ordering, etc, the flows where most of the systems traffic is and the business money is made. Secondly I would look for any particular areas of the code that are not well maintained and/or are messy and hard to work on. Discussing with the developers is usually a pretty good way to sniff the smelly code out as they will usualy know them intemitely. Another way of identifying these areas can be to look for parts of the system that have a higher bug rate. It can be important to get test coverage around these areas as well. 
+All of the above is a pragamatic approach to the question at hand, but a lot would depend on the amount of time that could be spent on the system, and how much trust there is in the functionlaity that is already there. If there is low confidence then it would require extra time to validate scenarios so that tests are not being built around incorrect behaviour, which may not look like a bug, but is still incorrect from the businesses perspective.
 
 ## Question 4 
-Before leaving the uk 2 years ago I was a frequent user of Just Eat, but obviously I am unaware of how the sites functionality has improved in that time. So my suggestions may be a little dated however, driver tracking and meal status are two features that I would have enjoyed very much when using your service. Logistically thou i can understand how this could be tricky and require restaurant envolvement to achieve.  
+Before leaving the UK 2 years ago I was a frequent user of Just Eat, but obviously I am unaware of how the sites functionality has improved in that time. So my suggestions may be a little dated however, driver tracking and meal status are two features that I would have enjoyed very much when using your service. Logistically thou i can understand how this could be tricky and require restaurant involvement to achieve.  
 
 ## Question 5 
 ```
