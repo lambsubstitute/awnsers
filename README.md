@@ -10,10 +10,6 @@ Total: 5 Hours
 ## Question 1
 I have completed a simple solution using c# and SpecFlow. I am a little out of practice having not worked with either since 2011 and felt it did not demonstrate my abilities sufficiently. This is why I have also included a second test suite using ruby and watir.  I am more familiar with this tool set and thought it would demonstrate my knowledge of concepts such as the page object model, and the use of cucumber. I will now go through common improvements I would make given the time (or if it was being deployed to a production environment).
 
-
-Before I talk about the solution side I would like to explain why there are two projects in the folder. Understanding your requirment for the demonstration of c# and Specflow skills I wanted to provide that to you. However it has been a long time since I have used specflow (lets just say it was somewhere early in version 1) and just about as long since I have written any c#. Given that I wanted to also provide something a little more familiare to myself in watir, where I can demonstrate concepts and good use of the tools like cucumber. Another choice on using both of these was to incorporate the BDD scenarios as proper cucumber features. 
-That being said I will go through common improvements I would make given the time (or if it was being deployed to a production environment). 
-
 __Common Improvements__
 
 * **cleaner html lookups on some entries.** 
