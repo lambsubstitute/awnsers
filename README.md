@@ -1,13 +1,22 @@
 # awnsers
-##1. 
+## 1. 
+```
+Time Spent
+SpecFlow: 3 Hours 
+Watir: 1 Hour
+-----------------
+Total: 4 Hours
+```
 
-##2. 
 
-##3. 
+## 2. 
 
-##4. 
 
-##5. 
+## 3. 
+
+## 4. 
+
+## 5. 
 
 `{"name":"Keith Ford", 
  "age" : 37, 
