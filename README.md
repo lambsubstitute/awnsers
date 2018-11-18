@@ -8,7 +8,7 @@ Writeup: 1 Hour
 -----------------
 Total: 5 Hours
 ```
-Before I talk about the solution side I would like to explain why their are two projects in the folder. Understanding your requirment for the demonstration of c# and Specflow skills I wanted to provide that to you. However it has been a long time since I have used specflow (lets just say it was somewhere early in version 1) and just about as long since I have written any c#. Given that I wanted to also provide something a little more familiare to myself in watir, where I can demonstrate concepts and good use of the tools like cucumber. 
+Before I talk about the solution side I would like to explain why their are two projects in the folder. Understanding your requirment for the demonstration of c# and Specflow skills I wanted to provide that to you. However it has been a long time since I have used specflow (lets just say it was somewhere early in version 1) and just about as long since I have written any c#. Given that I wanted to also provide something a little more familiare to myself in watir, where I can demonstrate concepts and good use of the tools like cucumber. Another choice on using both of these was to incorporate the BDD scenarios as proper cucumber features. 
 That being said I will go through common improvements I would make given the time (or if it was being deployed to a production environment). 
 
 __Common Improvements__
@@ -33,6 +33,31 @@ I did not have time to look up how this is usually implemented in c#.
 * **Lookups not using data-test-id.**
 I could not find how to build custom lookups using these, and wanted to avoid using xpath to locate on these specifically. 
 
+**How to run**
+To run this project, please unzip and open in visual studio, and then run the tests. All the dependencies should be provided. 
+
+
+
+**Watir**
+I choose to do this in addition to the SpecFlow to show my knowledge and use of concepts such as Page Object model, where I am more familiare. The following is a diagram of the model I have used:
+```
+ ---->>> Cucucmber feature file: holds the scenarios and steps, these call the step definitions
+   |
+   |
+ ---->>> Step definitions: clean step definitions, we conduct assertions and expectations at this level by calling the helpers
+   |
+   |
+ ---->>> Helpers: using page objects user flows can be built, conditional logic about flows can also be added here. most of the complicated work will be done at this level. if the logical flow of functionality is to be changed it can be handled here
+   |
+   |
+ ---->> Page objects: UI Interactions level, here we have the pure interactions that keep element identifiers for specific pages or page areas, which cuts down code reuse and improves maintainability
+ ```
+**How to run**
+You will need to install Ruby 2.4.x (this was written on 2.4.1p111).
+Install the ruby gem bundler using the command `gem install bundler`.
+Once installed navigate to the root of the test folder, and run `bundler install` which should install all the required gems.
+To run the tests, navigate to the 'test' folder and run the command `rake search`. Alternatively you can run the tests with the command `cucumber`.
+ 
 
 
 ## Question 2 
