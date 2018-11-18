@@ -34,7 +34,9 @@ Although I did try to cut code reuse down within the step file, with helper meth
 I would like to have added custom lookups on these. 
 
 #### How to run
-To run this project, please unzip and navigate to the SpecFlow folder. With visual studio 2017 open the solution found in the SpecFlow folder called `menulogSearch.sln`. The tests can then be from the Visual studio options menu. All the dependencies should be provided in the packages folder. 
+* To run this project, please unzip and navigate to the SpecFlow folder. 
+* With visual studio 2017 open the solution found in the SpecFlow folder called `menulogSearch.sln`. 
+* The tests can then be from the Visual studio options menu. All the dependencies should be provided in the packages folder. 
 
 
 
@@ -54,10 +56,10 @@ I choose to do this to show my knowledge and use of concepts such as Page Object
  ---->> Page objects: UI Interactions level, here we have the pure interactions that keep element identifiers for specific pages or page areas, which cuts down code reuse and improves maintainability
  ```
 #### How to run
-You will need to install Ruby 2.4.x (this was written on 2.4.1p111).
-Install the ruby gem bundler using the command `gem install bundler`.
-Once installed navigate to the root of the test folder, and run `bundler install` which should install all the required gems.
-To run the tests, navigate to the 'test' folder and run the command `rake search`. Alternatively you can run the tests with the command `cucumber`.
+* You will need to install Ruby 2.4.x (this was written on 2.4.1p111).
+* Install the ruby gem bundler using the command `gem install bundler`.
+* Once installed navigate to the root of the test folder, and run `bundler install` which should install all the required gems.
+* To run the tests, navigate to the 'test' folder and run the command `rake search`. Alternatively you can run the tests with the command `cucumber`.
  
 ## Question 2 
 The introduction of new automation solutions on to the market that don't use selenium is interesting. Although they have their limitations or costs, it will be interesting to see how they develop moving forward. The w3c recomendation paper for Selenium is some interesting news from this June and will hopefully add some needed standardisation after all the time it has been around.  
