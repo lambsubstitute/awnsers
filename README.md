@@ -24,7 +24,8 @@ Neither test has this capacity
 * **Fragile tests due to data dependency.**
 The tests have no ability to set the data up first and as such there is no garuntee it will always be in the system under tests resulting in false failures. 
 
-**SpecFlow**
+__**SpecFlow**__
+
 Although I spent longer on this project, there are a lot more things I could have done better with more time (mostly reading up and refamiliarizing myself). Some of these include:
 * **Use of sleeps.**
 Use of sleeps is an anti-patten for test automation, but I could not find a way for it to wait for button/link in the time.
@@ -34,11 +35,13 @@ I did not have time to look up how this is usually implemented in c#.
 I could not find how to build custom lookups using these, and wanted to avoid using xpath to locate on these specifically. 
 
 **How to run**
+
 To run this project, please unzip and open in visual studio, and then run the tests. All the dependencies should be provided. 
 
 
 
-**Watir**
+__**Watir**__
+
 I choose to do this in addition to the SpecFlow to show my knowledge and use of concepts such as Page Object model, where I am more familiare. The following is a diagram of the model I have used:
 ```
  ---->>> Cucucmber feature file: holds the scenarios and steps, these call the step definitions
