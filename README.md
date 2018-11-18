@@ -67,7 +67,7 @@ If the system under test had no test automation coverage; the first steps would 
 All of the above is a pragamatic approach to the question at hand, but a lot would depend on the amount of time that could be spent on the system, and how much trust there is in the functionlaity that is already there. If there is low confidence then it would require extra time to validate scenarios so that tests are not being built around incorrect behaviour, which may not look like a bug, but is still incorrect from the businesses perspective.
 
 ## Question 4 
-Before leaving the UK 2 years ago I was a frequent user of Just Eat, but obviously I am unaware of how the sites functionality has improved in that time. So my suggestions may be a little dated however, driver tracking and meal status are two features that I would have enjoyed very much when using your service. Logistically thou i can understand how this could be tricky and require restaurant involvement to achieve.  
+Before leaving the UK 2 years ago I was a frequent user of Just Eat, but obviously I am unaware of how the sites functionality has improved in that time. So my suggestions may be a little dated however, driver tracking and meal status are two features that I would have enjoyed very much when using your service. Logistically I can understand how this could be tricky and require restaurant involvement to achieve.  
 
 ## Question 5 
 ```
