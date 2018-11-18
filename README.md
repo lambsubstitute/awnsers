@@ -17,9 +17,17 @@ This is espcially true in the SpecFlow example. For watir I was able to build th
 * **Better browser Support and cleanup.**
 Currently both test suites only support Firefox and Chrome. I would have like to introduce IE, Edge, and maybe Safari for both solutions. The SepecFlow tests suffer from the browsers not being shut down after the tests have completed, something which helped when debugging them but is not useful for CI. 
 * **Screenshotting and other reporting.**
-Neither test suite reports failures nicley or creates any test reports, screenshots, or other debugging information besides what is provided by the console. If I had the time I would have liked to include Allure reporting in to both projects, although this is not something I have done before, I have done it with selenium JVM tests successfully. 
+Neither test suite reports failures nicley or creates any test reports, screenshots, or other debugging information besides what is provided by the console. If I had the time I would have liked to include Allure reporting in to both projects, although this is not something I have done before in these langauges, I have done it with selenium JVM tests successfully. 
+* **Ability to run tests in parralel.**
+Neither test has this capacity
 
-## 2. 
+**SpecFlow**
+Although I spent longer on this project, there are a lot more things I could have done better with more time (mostly reading up and refamiliarizing myself). Some of these include:
+* **Use of sleeps.**
+Use of sleeps is an anti-patten for test automation, but I could not find a way for it to wait for button/link in the time.
+
+
+## Question 2 
 
 
 ## 3. 
