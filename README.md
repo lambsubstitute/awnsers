@@ -66,18 +66,19 @@ To run the tests, navigate to the 'test' folder and run the command `rake se
 ## Question 2 
 I dont know if it counts as a trend, but the introduction of new automation solutions on to the market that dont use selenium is interesting. Although they have there limitations or costs, it will be interesting to see how they develop moving forward. The w3c recomendation paper for Selenium is some interesting news from this June and will hopefully add some needed standadisation after all the time it has been around.  
 
-## 3. 
+## Question 3 
 If the system under test had no test automation coverage, The first steps would be to establish some tests around the business critical flows. These include registration, search, ordering, etc, the flows where most of the systems traffic is and the business money is made. Secondly I would look for any particular areas of the code that are not well maintained and/or are messy and hard to work on. Discussing with the developers is usually a pretty good way to sniff the smelly code out as they will usualy know them intemitely. Another way of identifying these area can be to look for areas of the system that have a higher bug rate. It can be important to get test coverage around these areas as well. 
 All of the above is a pragamatic approach to the question at hand, but a lot would depend on the amount of time that could be spent on the system, and how much trust there is in the functionlaity that is already there. If there is a low confidence then it would require extra time to validate scenarios are correct and that tests are not being built around incorrect behaviour, which may not look like a bug is still incorrect from the businesses perspective.
 
-## 4. 
+## Question 4 
 Before leaving the uk 2 years ago I was a frequent user of Just Eat, but obviously I am unaware of how the sites functionality has improved in that time. So my suggestions may be a little dated however, driver tracking and meal status are two features that I would have enjoyed very much when using your service. Logistically thou i can understand how this could be tricky and require restaurant envolvement to achieve.  
 
-## 5. 
+## Question 5 
 ```
 {"name":"Keith Ford", 
  "age" : 37, 
  "hobbies" : ["Reading", "Arsenal", "Ancient Civilisations", "Travel", "TV and Movies"],
- "MentalAttributes" : {"Openness" : 8, "Conscientiousness" : 8, "Extraversion" : 8, "Agreeableness" : 8}
+ "favouriteTV" : ["Rick & Morty", "Black Mirror", "South Park", "The Venture Bros"],
+ "mentalAttributes" : {"Openness" : 8, "Conscientiousness" : 9, "Extraversion" : 7, "Agreeableness" : 8}
 }
 ```
